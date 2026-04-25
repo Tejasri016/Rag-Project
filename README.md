@@ -86,32 +86,6 @@ Bot: Refunds are allowed within 7 days...
 
 ## 🏗 System Architecture
 
-User Query
-
-   ↓
-   
-Embedding Generation
-
-       ↓
-
-ChromaDB Vector Search
-
-       ↓
-
-Relevant Context Retrieval
- 
-       ↓
-
-Gemini LLM Processing
-
-       ↓
-
-LangGraph Workflow Control
-   
-       ↓
-
-Final Answer / HITL Escalation
-
 
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/216328bd-fc9f-45d4-974e-7441b876446b" />
 
