@@ -16,13 +16,13 @@
 
 ## 2. API Keys
 
-Create a file named `.env` in the root directory (`d:\innomatics\Rag-Project\.env`) and add your OpenAI API key:
+Create a file named `.env` in the root directory (`d:\innomatics\Rag-Project\.env`) and add your Google API key:
 
 ```env
-OPENAI_API_KEY=sk-your-openai-api-key-here
+GOOGLE_API_KEY=your-google-api-key-here
 ```
 
-*(Note: You can replace the OpenAI models with open-source alternatives in `app.py` if needed, e.g., using `Ollama` or `HuggingFace`).*
+*(Note: You can replace the Gemini models with other alternatives in `app.py` if needed).*
 
 ## 3. Running the Application
 

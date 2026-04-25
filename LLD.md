@@ -22,7 +22,7 @@
 #### 2.1.3 Embedding Module
 *   **Purpose:** Generates vector embeddings for text chunks and queries.
 *   **Input:** Text string (`str`).
-*   **Process:** Uses an embedding model (e.g., `OpenAIEmbeddings` with `text-embedding-3-small` or `HuggingFaceEmbeddings` for open-source). Converts the text into a fixed-length float array representing semantic meaning.
+*   **Process:** Uses an embedding model (e.g., `GoogleGenerativeAIEmbeddings` with `models/gemini-embedding-2` or `HuggingFaceEmbeddings` for open-source). Converts the text into a fixed-length float array representing semantic meaning.
 *   **Output:** Float array (Vector: `List[float]`).
 
 #### 2.1.4 Retrieval Module

@@ -91,7 +91,7 @@ graph TD
 *   **LangChain:** Industry standard for building LLM applications; provides excellent abstractions for document loading, splitting, and prompt management.
 *   **ChromaDB:** Lightweight, open-source, and runs locally. It requires no separate server setup, making it perfect for rapid development, testing, and academic/internship projects.
 *   **LangGraph:** Crucial for this project. Standard LangChain `chains` are DAGs (Directed Acyclic Graphs) and cannot handle cycles or state pauses. LangGraph provides the stateful, multi-actor orchestration necessary for a true Human-in-the-Loop system.
-*   **LLM (OpenAI / Open-source):** High reasoning capabilities are required not just for generation, but for the complex routing and confidence grading nodes.
+*   **LLM (Google Gemini / Open-source):** High reasoning capabilities are required not just for generation, but for the complex routing and confidence grading nodes.
 
 ### 1.7 Scalability Considerations (Real-World System Thinking)
 While this design is optimized for an internship project, a production-scale version requires the following considerations:

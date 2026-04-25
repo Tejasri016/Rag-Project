@@ -14,8 +14,8 @@ The system relies on a **stateful graph architecture** orchestrated by LangGraph
 
 *   **Chunk Size (1000 chars, 200 overlap):** 
     *   *Why:* 1000 characters is approximately 200-250 words, which is usually enough to capture a full paragraph or a complete thought in a manual. The 200-character overlap prevents cutting off mid-sentence, ensuring the LLM doesn't lose context at the boundaries.
-*   **Embedding Choice (`text-embedding-3-small` or `HuggingFace BGE`):** 
-    *   *Why:* OpenAI's `text-embedding-3-small` provides state-of-the-art semantic representation at a very low cost and high dimensionality. For completely local/free execution, HuggingFace's BGE models (e.g., `BAAI/bge-small-en`) are top-tier open-source alternatives.
+*   **Embedding Choice (`models/gemini-embedding-2`):** 
+    *   *Why:* Google's `gemini-embedding-2` provides state-of-the-art semantic representation at a very low cost (with free tier limits). For completely local/free execution, HuggingFace's BGE models (e.g., `BAAI/bge-small-en`) are top-tier open-source alternatives.
 *   **Retrieval Method (Cosine Similarity):** 
     *   *Why:* Cosine similarity measures the angle between vectors rather than their magnitude. This is highly effective for text search, where a short query and a long document chunk might have different magnitudes but point in the same semantic direction.
 *   **Prompt Engineering (Strict Context Grounding):** 
