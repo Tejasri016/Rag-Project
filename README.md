@@ -1,6 +1,8 @@
-# 🤖 RAG-Based Customer Support Assistant
+🤖 RAG-Based Customer Support Assistant
 
-This project is a Retrieval-Augmented Generation (RAG) system designed to build an intelligent customer support assistant. It uses a PDF-based knowledge base to retrieve relevant information and generate context-aware responses using a Large Language Model (Google Gemini). The system is enhanced with LangGraph for workflow orchestration and includes a Human-in-the-Loop (HITL) mechanism for handling low-confidence queries.
+This project is a Retrieval-Augmented Generation (RAG) system designed to build an intelligent customer support assistant. It uses a PDF-based knowledge base to retrieve relevant information and generate context-aware responses using a Large Language Model (Google Gemini).
+
+The system is enhanced with LangGraph for workflow orchestration and includes a Human-in-the-Loop (HITL) mechanism for handling low-confidence queries.
 
 ---
 
@@ -113,6 +115,7 @@ Bot: Refunds are allowed within 7 days...
 
 <img width="1371" height="845" alt="image" src="https://github.com/user-attachments/assets/2be0fe2c-a51c-4ea4-8591-ad8078b4feaa" />
 
+### Console version outputs
 ### 🧪 Query Response Example
 - Shows how the system retrieves relevant information from the PDF knowledge base and generates a response using Gemini LLM.
 
@@ -127,6 +130,24 @@ Bot: Refunds are allowed within 7 days...
 ### 🤝 Human-in-the-Loop (HITL) Activation Example
 - Shows the system triggering HITL when confidence is low and asking for human intervention.
 <img width="1088" height="379" alt="image" src="https://github.com/user-attachments/assets/85ba951c-5952-48cb-b69d-6b91bb295fad" />
+
+
+### UI version outputs
+
+### Dashboard
+
+<img width="1916" height="912" alt="image" src="https://github.com/user-attachments/assets/fa6796ab-a558-4d8d-9994-f98feca66f31" />
+
+
+### 🧪 Query Response Example
+
+<img width="1915" height="905" alt="image" src="https://github.com/user-attachments/assets/c6925822-2681-43bc-b16a-8476ef396291" />
+<br>
+<img width="1911" height="906" alt="image" src="https://github.com/user-attachments/assets/18f365a9-54bd-46ed-903b-d4bd37b000a2" />
+
+### 🤝 Human-in-the-Loop (HITL) Activation Example
+
+<img width="1908" height="951" alt="image" src="https://github.com/user-attachments/assets/a050d818-c55f-4a93-8afd-af38a2ac42fd" />
 
 
 ## 👨‍💻Author 
