@@ -12,7 +12,9 @@ The main objective of this project is to design and implement a scalable AI-base
 - Retrieves relevant information from a PDF knowledge base
 - Generates intelligent responses using an LLM
 - Uses workflow control for decision-making
-- Includes human intervention for uncertain cases
+- Includes human intervention for uncertain cases(HITL)
+- Provides API documentation using Swagger
+- Offers a user-friendly interface
 
 ---
 ## ⭐ Key Features
@@ -23,6 +25,8 @@ The main objective of this project is to design and implement a scalable AI-base
 - 🤖 Response generation using Google Gemini
 - 🔁 LangGraph-based workflow orchestration
 - 🤝 Human-in-the-Loop (HITL) escalation system
+- 🌐 Interactive UI (Frontend)
+- 📘 Swagger API documentation for testing endpoints
 
 ---
 
@@ -73,6 +77,13 @@ When you run `app.py`, it simulates a workflow:
 5.  Type your response and hit enter. The graph resumes and delivers your human answer as the final output.
 
 ---
+## 📘 Swagger API Documentation
+
+After running the project, open:
+```
+http://localhost:8000/docs
+```
+👉 This provides interactive API testing for all backend endpoints.
 
 ## 🎥 Project Demo
 
@@ -100,16 +111,28 @@ Bot: Refunds are allowed within 7 days...
 - LangGraph  
 - ChromaDB  
 - Google Gemini API  
-- PyPDF  
+- PyPDF
+- FastAPI
+- Swagger UI
+- HTML, CSS, JavaScript
+
+---
+## 🎨 UI Features
+- Interactive chat interface
+- Real-time query-response system
+- Integrated backend communication
+- Improved user experience over CLI version
 
 ---
 
-## 🚀 Future Scope
+## 🚀 Future Enhancements
+Multi-document knowledge base
+Authentication system
+Cloud deployment (AWS / GCP)
+Advanced intent classification
+Chat history memory
 
-- Web-based chatbot interface (Flask / Streamlit)
-- Multi-document knowledge base support
-- User feedback learning system
-- Cloud deployment (AWS / GCP)
+---
 
 ## 📸 Screenshots
 
@@ -150,6 +173,16 @@ Bot: Refunds are allowed within 7 days...
 <img width="1908" height="951" alt="image" src="https://github.com/user-attachments/assets/a050d818-c55f-4a93-8afd-af38a2ac42fd" />
 
 
+## Fast API SWAGGER Output
+<img width="1874" height="883" alt="image" src="https://github.com/user-attachments/assets/ea84e9a0-e7f5-4f82-8872-6d6c3840125a" />
+
+---
+## 🙏 Acknowledgement
+
+This project was developed as part of my Generative AI Internship at Innomatics Research Labs.
+It provided hands-on experience in building real-world AI systems using RAG architecture.
+
+---
 ## 👨‍💻Author 
 **Tejasri - IN226103402(Gen-AI intern)**
 
