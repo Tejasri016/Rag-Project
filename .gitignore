@@ -1,0 +1,16 @@
+# Virtual environment
+venv/
+
+# Environment variables (VERY IMPORTANT)
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Vector DB (ChromaDB local files)
+chroma_db/
+
+# Logs / system files
+.DS_Store
+Thumbs.db
