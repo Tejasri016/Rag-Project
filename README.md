@@ -118,10 +118,10 @@ Bot: Refunds are allowed within 7 days...
 
 <img width="1243" height="902" alt="image" src="https://github.com/user-attachments/assets/7c3a5eb1-1392-4186-893f-fac316ed7764" />
 
-
+<br>
 <img width="1276" height="957" alt="image" src="https://github.com/user-attachments/assets/6308db64-44ba-425d-9d5d-72275d7e234b" />
 
-
+<br>
 <img width="1276" height="930" alt="image" src="https://github.com/user-attachments/assets/b7317c76-10b3-43b7-8ee5-b545f456686b" />
 
 ### 🤝 Human-in-the-Loop (HITL) Activation Example
