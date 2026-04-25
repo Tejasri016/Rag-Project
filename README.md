@@ -70,6 +70,8 @@ When you run `app.py`, it simulates a workflow:
 4.  The script will prompt you in the terminal: `Human Agent, provide the answer:`
 5.  Type your response and hit enter. The graph resumes and delivers your human answer as the final output.
 
+---
+
 ## 🎥 Project Demo
 
 - Input: User query is asked in terminal
@@ -79,6 +81,8 @@ When you run `app.py`, it simulates a workflow:
 👉 Example:
 User: What is refund policy?
 Bot: Refunds are allowed within 7 days...
+
+---
 
 ## 🏗 System Architecture
 
@@ -98,6 +102,8 @@ Final Answer / HITL Escalation
 
 
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/216328bd-fc9f-45d4-974e-7441b876446b" />
+
+---
 
 ## 🛠 Tech Stack
 
