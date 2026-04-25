@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innomatics RAG Assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar / Settings -->
+        <aside class="sidebar glass-panel">
+            <div class="logo">
+                <i class="fa-solid fa-robot gradient-text"></i>
+                <h2>InnoSupport</h2>
+            </div>
+            
+            <div class="settings-section">
+                <h3>Knowledge Base</h3>
+                <p>Upload a PDF manual or FAQ to ground the AI.</p>
+                <div class="file-upload-wrapper">
+                    <input type="file" id="pdf-upload" accept=".pdf" class="file-input">
+                    <label for="pdf-upload" class="btn btn-outline">
+                        <i class="fa-solid fa-file-pdf"></i> Select PDF
+                    </label>
+                </div>
+                <button id="upload-btn" class="btn btn-primary mt-3" disabled>
+                    <i class="fa-solid fa-cloud-arrow-up"></i> Upload & Process
+                </button>
+                <div id="upload-status" class="status-msg"></div>
+            </div>
+
+            <div class="view-toggles">
+                <button id="toggle-chat-btn" class="view-btn active"><i class="fa-solid fa-comments"></i> User Chat</button>
+                <button id="toggle-agent-btn" class="view-btn"><i class="fa-solid fa-headset"></i> Agent Dashboard</button>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            
+            <!-- User Chat View -->
+            <section id="chat-view" class="view-section active">
+                <div class="chat-header glass-panel">
+                    <h3>Customer Support</h3>
+                    <span class="status-badge online">AI Online</span>
+                </div>
+                
+                <div class="chat-box" id="chat-box">
+                    <div class="message system">
+                        <div class="avatar"><i class="fa-solid fa-robot"></i></div>
+                        <div class="bubble">Hello! I am the InnoSupport AI. How can I help you today?</div>
+                    </div>
+                </div>
+
+                <div class="input-area glass-panel">
+                    <input type="text" id="chat-input" placeholder="Type your message here..." autocomplete="off">
+                    <button id="send-btn" class="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </section>
+
+            <!-- Agent Dashboard View -->
+            <section id="agent-view" class="view-section" style="display: none;">
+                <div class="agent-header glass-panel">
+                    <h3>Agent Workspace</h3>
+                    <button id="refresh-escalations-btn" class="btn btn-outline small">
+                        <i class="fa-solid fa-arrows-rotate"></i> Refresh
+                    </button>
+                </div>
+                
+                <div class="escalation-container" id="escalation-container">
+                    <div class="empty-state">
+                        <i class="fa-solid fa-check-circle"></i>
+                        <p>No active escalations. The AI is handling everything!</p>
+                    </div>
+                    <!-- Escalation cards will be injected here -->
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Template for Agent Escalation Card -->
+    <template id="escalation-template">
+        <div class="escalation-card glass-panel">
+            <div class="escalation-header">
+                <h4>Thread ID: <span class="thread-id"></span></h4>
+                <span class="reason-badge"></span>
+            </div>
+            <div class="escalation-body">
+                <div class="data-group">
+                    <label>User Query:</label>
+                    <p class="user-query"></p>
+                </div>
+                <div class="data-group">
+                    <label>AI Draft (Rejected):</label>
+                    <p class="ai-draft"></p>
+                </div>
+                <div class="data-group">
+                    <label>Context Found:</label>
+                    <div class="context-snippets"></div>
+                </div>
+            </div>
+            <div class="escalation-footer">
+                <textarea class="agent-reply-input" placeholder="Type the correct resolution here..."></textarea>
+                <button class="btn btn-primary resolve-btn">Resolve & Send</button>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>
