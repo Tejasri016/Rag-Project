@@ -1,4 +1,4 @@
-🤖 RAG-Based Customer Support Assistant
+# 🤖 RAG-Based Customer Support Assistant
 
 This project is a Retrieval-Augmented Generation (RAG) system designed to build an intelligent customer support assistant. It uses a PDF-based knowledge base to retrieve relevant information and generate context-aware responses using a Large Language Model (Google Gemini).
 
@@ -175,6 +175,29 @@ Chat history memory
 
 ## Fast API SWAGGER Output
 <img width="1874" height="883" alt="image" src="https://github.com/user-attachments/assets/ea84e9a0-e7f5-4f82-8872-6d6c3840125a" />
+
+---
+
+## 🎥 Demo Video
+
+👉 Watch Full Demo Here: https://drive.google.com/drive/folders/1mV1dEcCnXME8kCKfzgECmMC3luI1k5d1?usp=drive_link
+
+---
+
+## 🔗 LinkedIn Post
+https://www.linkedin.com/posts/tejasri-somarouthu-78aa83355_generativeai-artificialintelligence-rag-ugcPost-7453901211042480128-6qQC?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFidKJoBRLvumfdgwfmIDItuHoJpdXkBZuI
+
+---
+
+## 📝 Note
+
+Due to ongoing semester examinations, this project was completed within limited time. A refined version with improved UI and explanation will be updated soon. The presentation PPT was created using the AI tool Gamma.
+
+---
+
+## 📌 Outcome
+
+A fully functional AI-powered customer support system combining retrieval-based search with generative AI, making responses more accurate, scalable, and production-ready.
 
 ---
 ## 🙏 Acknowledgement
